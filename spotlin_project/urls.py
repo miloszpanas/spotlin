@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from spotlin import views as spotlin_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('nowa_specjalizacja/', spotlin_views.nowa_specjalizacja),
 ]
